@@ -31,7 +31,7 @@ class CreateVilleDialogFragment : DialogFragment() {
         val auto = AutoCompleteTextView(context)
         with(input) {
             inputType = InputType.TYPE_CLASS_TEXT
-             hint = "chose your city"
+            hint = "chose your city"
         }
         val list = arrayOf(
             "Casablanca",
@@ -61,13 +61,10 @@ class CreateVilleDialogFragment : DialogFragment() {
             arrayAdapter,
             DialogInterface.OnClickListener { _, _ ->
                 for (i in list.indices)
-                listener?.onDialogPositiveClick(list.get(i))
+                //   adapterView.getItemAtPosition(i).toString() = CITY
+                    listener?.onDialogPositiveClick(list.get(i))
 
             })
-
-
-
-
         return builder.create()
     }
 

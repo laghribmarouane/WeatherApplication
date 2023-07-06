@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Météo</string>
+    <string-array name="Languages">
+        <item>Rabat</item>
+        <item>Fes</item>
+        <item>Marakech</item>
+        <item>Casablanca</item>
 
+    </string-array>
     <!-- City fragment -->
     <string name="city_cities">Cities</string>
     <string name="city_message_error_could_not_create_city">Impossible de créer la ville</string>
@@ -32,4 +38,5 @@
 
     <!-- WeatherOld menu -->
     <string name="menu_refresh_weather">Rafraichir la météo</string>
+
 </resources>
